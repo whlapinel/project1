@@ -2,15 +2,24 @@ body {
     background-color:bisque;
 }
 
+.navbar {
+    background-color:cadetblue;
+}
+
 .navbar * {
-    display: flexbox;
+    display: inline-block;
     text-decoration: none;
     color: black;
-    background-color:cadetblue;
-    margin: auto
+    padding: 5px;
+    margin: 0;
 }
 
 .title {
-    text-align: center;
+    text-align: left;
+    background-color:cadetblue;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+
 }
 
