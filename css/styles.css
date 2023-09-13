@@ -6,6 +6,9 @@ body {
     display: flex;
     text-decoration: none;
     color: black;
+    background-color:cadetblue;
+    border-color: black;
+    border-width: 1px;
     margin: auto
 }
 
