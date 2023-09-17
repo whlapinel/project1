@@ -16,6 +16,9 @@ const footerTemplate = document.createElement('template');
 
 const footer = document.querySelector('footer');
 
-footerTemplate.innerHTML = '<p class="footer">this is my footer</p>';
+footerTemplate.innerHTML = '\
+<section id="footer">\
+<p>this is my footer<p>\
+</section>';
 
 footer.appendChild(footerTemplate.content);

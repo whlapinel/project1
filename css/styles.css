@@ -5,29 +5,21 @@ body {
 
 .title {
     display: flex;
-    justify-content: center;
-    border: solid;
+    justify-content: flex-start;
 }
-
-
 
 .navbar {
     background-color:rgb(149, 229, 247);
     display: flex;
-    justify-content: space-around;
-    text-decoration: none;
-    font: 1em;
-    border: solid;
-    border-top: 0;
-    border-bottom: 0;
-    font-weight: bold;
+    justify-content:flex-start;
 }
 
-.navbar * {
+.navbar a {
     text-decoration: none;
     color: black;
     padding: 5px;
-    margin: 0;    
+    margin: 0;
+    font-size: large;
 }
 
 .title {
@@ -39,9 +31,23 @@ body {
 }
 
 main {
-    border: solid;
 }
 
 main h1 {
     text-align: center;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+#projects-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
 }
