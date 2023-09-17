@@ -18,7 +18,7 @@ const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = '\
 <div class="title-bar">\
 <image id="logo" src="images/logo.png">\
-<h1>Will Lapinel</h1>\
+<p>Will Lapinel<p>\
 </div>\
 <nav class="navbar">\
 <a href="index.html">Home</a>\
@@ -33,6 +33,6 @@ const footerTemplate = document.createElement('template');
 const footer = document.querySelector('footer');
 footerTemplate.innerHTML = '\
 <section id="footer">\
-<p>this is my footer<p>\
+<p>&copy Will Lapinel 2023<p>\
 </section>';
 footer.appendChild(footerTemplate.content);

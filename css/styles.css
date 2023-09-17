@@ -11,6 +11,10 @@ main {
     margin-top: 0;
 }
 
+main h1 {
+    text-align: center;
+}
+
 .navbar {
     background-color: rgb(115, 203, 103);
     display: flex;
@@ -30,16 +34,17 @@ main {
     justify-content: flex-start;
     align-items: center;
     background-color: rgb(220, 94, 92);
-    color: black;
-    font-family: 'Courier Prime', monospace;;
-    font-size: large;
     margin: 0;
     padding: 5px 0 5px 20px;
     gap: 1rem;
 }
 
-.title-bar h1 {
+.title-bar p {
     margin: 0;
+    color: black;
+    font-family: 'Courier Prime', monospace;;
+    font-size:xx-large;
+    font-weight: 800;
 }
 
 #logo {
@@ -57,11 +62,12 @@ main {
     background-size: cover;
     background-position: center;
     height: 50vh;
+    border-radius: 10px;
 }
 
 #projects-intro {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     height: 50vh;
 }
 
@@ -78,9 +84,34 @@ main {
     border: solid;
 }
 
-#about {
+
+#about-heading {
     display: flex;
     justify-content: center;
+    background-color: rgb(220, 94, 92);
+    margin: 0.5rem 0 0.5rem 0;
+    border-radius: 5px;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+}
+
+#about div {
+    background-color: rgb(115, 203, 103);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#about div :first-child {
+    font-weight: bold;
+    text-align: center;
+}
+
+#container {
+    display: flex;
 }
 
 #footer {
