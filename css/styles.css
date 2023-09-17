@@ -26,14 +26,14 @@ body {
     background-color: rgb(220, 94, 92);
     color: black;
     font-family: 'Courier Prime', monospace;;
-    font-size: x-large;
+    font-size: large;
     margin: 0;
-    padding: 0 0 0 20px;
+    padding: 5px 0 5px 20px;
     gap: 1rem;
 }
 
 .title-bar h1 {
-    margin: 1rem;
+    margin: 0;
 }
 
 #logo {
@@ -80,12 +80,4 @@ body {
 #footer {
     display: flex;
     justify-content: center;
-}
-
-@media screen and (max-width = 700px)  {
-
-    .title-bar {
-        flex-direction: column;
-    }
-    
 }
