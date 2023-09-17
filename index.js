@@ -8,7 +8,8 @@ headTemplate.innerHTML = '\
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=\
 Patua+One&family=Roboto&family=Sofia+Sans&display=swap" rel="stylesheet">\
-<title>Home</title>';
+<title>Will Lapinel</title>\
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">';
 const head = document.querySelector('head');
 head.appendChild(headTemplate.content);
 
@@ -16,12 +17,12 @@ head.appendChild(headTemplate.content);
 const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = '\
 <div class="title-bar">\
-<image id="logo" src="/images/logo.png">\
+<image id="logo" src="images/logo.png">\
 <h1>Will Lapinel</h1>\
 </div>\
 <nav class="navbar">\
 <a href="index.html">Home</a>\
-<a href="project.html">Project</a>\
+<a href="project.html">Projects</a>\
 <a href="contact.html">Contact</a>\
 </nav>';
 const header = document.querySelector('header');

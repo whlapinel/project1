@@ -1,12 +1,18 @@
 body {
-    background-color: bisque;
+    background-color: lightgoldenrodyellow;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     margin: 0;
 }
 
+main {
+    width: 90vw;
+    margin: auto;
+    margin-top: 0;
+}
+
 .navbar {
-    background-color: rgb(69, 159, 57);
+    background-color: rgb(115, 203, 103);
     display: flex;
     justify-content: flex-start;
 }
@@ -46,7 +52,7 @@ body {
     display: flex;
     color: white;
     justify-content: center;
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(/images/toad.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.071),rgba(0, 0, 0, 0.929)),url(../images/toad.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -55,7 +61,7 @@ body {
 
 #projects-intro {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     height: 50vh;
 }
 
