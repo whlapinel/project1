@@ -9,7 +9,8 @@ headTemplate.innerHTML = '\
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=\
 Patua+One&family=Roboto&family=Sofia+Sans&display=swap" rel="stylesheet">\
 <title>Will Lapinel</title>\
-<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">';
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">\
+<script src="https://kit.fontawesome.com/d430333564.js" crossorigin="anonymous" defer></script>';
 const head = document.querySelector('head');
 head.appendChild(headTemplate.content);
 
@@ -33,6 +34,11 @@ const footerTemplate = document.createElement('template');
 const footer = document.querySelector('footer');
 footerTemplate.innerHTML = '\
 <section id="footer">\
-<p>&copy Will Lapinel 2023<p>\
+<div id="social-media">\
+<a href="https://www.facebook.com"><img src="images/facebook.png"></a>\
+<a href="https://www.twitter.com"><img src="images/logo-x-twitter.svg"></a>\
+<a href="https://www.instagram.com"><img src="images/IG-logo.png"></a>\
+</div>\
+<p>&copy Will Lapinel 2023</p>\
 </section>';
 footer.appendChild(footerTemplate.content);
