@@ -12,6 +12,10 @@ body {
     margin: 0;
 }
 
+header a:hover {
+    background-color: azure;
+}
+
 main {
     width: 90vw;
     margin: auto;
