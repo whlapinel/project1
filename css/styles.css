@@ -1,11 +1,13 @@
 :root {
-    --primary-color: rgb(220, 94, 92);
-    --secondary-color: rgb(115, 203, 103);
-    --background-color: lightgoldenrodyellow;
+    --primary-color: #0049B7;
+    --secondary-color: #ff1d58;
+    --tertiary-color: #00DDFF;
+    --quaternary-color: #f75990;
+    --accent-color: #fff685;
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     margin: 0;
@@ -26,7 +28,7 @@ main h1 {
 }
 
 .navbar {
-    background-color: var(--secondary-color);
+    background-color: var(--quaternary-color);
     display: flex;
     justify-content: flex-start;
 }
@@ -43,7 +45,7 @@ main h1 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     margin: 0;
     padding: 5px 0 5px 20px;
     gap: 1rem;
@@ -79,7 +81,7 @@ main h1 {
 
 #hero-button {
     display: inline-block;
-    background-image: linear-gradient(to right, rgb(80,66,54), red,rgb(86,82,77));
+    background-color: var(--quaternary-color);
     padding: 5px;
     
     margin: 10px;
@@ -90,12 +92,15 @@ main h1 {
     border-width: 1px;
     color: rgb(255, 255, 255);
     font-size: x-large;
-    box-shadow: 5px 5px 5px red;
+    box-shadow: 8px 8px 3px 1px var(--tertiary-color);
 }
 
 #hero-button:hover {
     box-shadow: none;
-    color: lightblue;
+    color: var(--quaternary-color);
+    background-color: azure;
+    box-shadow: 8px 8px 3px 1px var(--secondary-color);
+
 }
 
 #projects-intro {
@@ -107,7 +112,7 @@ main h1 {
     padding: 10px;
     justify-content: center;
     height: 20vh;
-    background-image: linear-gradient(to bottom, var(--secondary-color),var(--primary-color));
+    background-image: linear-gradient(to bottom, var(--quaternary-color),var(--tertiary-color));
 }
 
 #projects-container {
@@ -163,7 +168,7 @@ a {
 #about-heading {
     display: flex;
     justify-content: center;
-    background-color: var(--primary-color);
+    background-color: var(--quaternary-color);
     margin: 0.5rem 0 0.5rem 0;
     border-radius: 5px;
 }
@@ -175,7 +180,7 @@ a {
 }
 
 #about div {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     padding: 10px;
     border-radius: 5px;
 }
@@ -215,4 +220,23 @@ a {
 #social-media img{
     width: 25px;
     height: auto;
+}
+
+#contact {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#contact-form {
+    background-color: #fff685;
+}
+
+#contact-form > legend {
+    background-color: #fff685;
+    border: solid;
+}
+
+#contact-form * {
+    width: 100%;
 }
