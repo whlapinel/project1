@@ -60,15 +60,34 @@ main h1 {
 .title-bar p {
     margin: 0;
     color: black;
-    font-family: 'Courier Prime', monospace;;
-    font-size:xx-large;
+    font-family: 'Courier Prime', monospace;
+    ;
+    font-size: xx-large;
     font-weight: 800;
 }
 
 #logo {
     height: 60px;
     padding-left: 1px;
+
 }
+
+body {
+	animation: fadeInAnimation ease 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 
 #hero {
     display: flex;
@@ -76,7 +95,7 @@ main h1 {
     color: white;
     justify-content: flex-end;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.929)),url(../images/toad.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.929)), url(../images/toad.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -88,7 +107,7 @@ main h1 {
     display: inline-block;
     background-color: var(--quaternary-color);
     padding: 5px;
-    
+
     margin: 10px;
     margin-bottom: 20px;
     text-decoration: none;
@@ -130,7 +149,7 @@ main h1 {
     flex-direction: column;
     text-align: center;
     border-color: black;
-    color: black;  
+    color: black;
 }
 
 #projects-container p {
@@ -166,7 +185,12 @@ a {
 }
 
 #projects-container div:hover {
-    color: aliceblue;
+    
+    .project-summary {
+        background-color: #532032;
+        color: rgb(210, 230, 248);
+    }
+    
 }
 
 #about-heading {
@@ -221,7 +245,7 @@ a {
     gap: 10px;
 }
 
-#social-media img{
+#social-media img {
     width: 25px;
     height: auto;
 }
@@ -247,7 +271,8 @@ fieldset#contact-form {
     width: fit-content;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
 }
 
