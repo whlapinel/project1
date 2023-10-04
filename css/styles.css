@@ -12,7 +12,6 @@ body {
     line-height: 1.5;
     margin: 0;
     box-shadow: inset 0px 20px 20px 11px;
-
 }
 
 header a:hover {
@@ -35,6 +34,8 @@ main h1 {
     display: flex;
     justify-content: flex-start;
     box-shadow: inset 1px -7px 20px 0px;
+    font-weight: 600;
+    font-family: Roboto, sans-serif;
 }
 
 .navbar a {
@@ -105,7 +106,6 @@ main h1 {
     color: var(--quaternary-color);
     background-color: azure;
     box-shadow: 8px 8px 3px 1px var(--secondary-color);
-
 }
 
 #projects-intro {
@@ -227,21 +227,32 @@ a {
     height: auto;
 }
 
-#contact {
+.heading {
+    text-align: center;
     display: flex;
-    margin: auto;
+    justify-content: center;
+    background-color: var(--quaternary-color);
+    margin: 0.5rem 0 0.5rem 0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form {
+    display: flex;
     justify-content: center;
 }
 
-#contact-form {
-    background-color: #fff685;
+
+fieldset#contact-form {
+    background-color: var(--accent-color);
+    width: fit-content;
 }
 
-#contact-form > legend {
-    background-color: #fff685;
+input, textarea {
+    width: 100%;
+}
+
+legend {
     border: solid;
-}
-
-#contact-form * {
-    width: 99%;
+    background-color: var(--accent-color);
 }
