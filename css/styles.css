@@ -73,7 +73,7 @@ main h1 {
 }
 
 body {
-	animation: fadeInAnimation ease 0.5s;
+	animation: fadeInAnimation linear 0.5s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
